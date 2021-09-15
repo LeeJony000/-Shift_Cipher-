@@ -1,5 +1,4 @@
 import sys
-import publish_logo
 import platform
 
 # 加密
@@ -105,13 +104,14 @@ if __name__ == '__main__':
     '''
 
     if platform.system() == 'Windows':
+        import publish_logo
         publish_logo.printSkyBlue(logo)
     elif platform.system() == 'Linux':
         print(f"\033[36m{logo}\033[0m")
     print('\n')
 
     while 1:
-        answer = input("请输入所需的操作：加密/E or 解密/D or 退出/Q: ")
+        answer = input("请输入所需的操作：移位加密/E or 移位解密/D or 退出/Q: ")
         i = 1
         if answer.upper() == 'E':
             s = input('请输入需要加密的字符： ')
