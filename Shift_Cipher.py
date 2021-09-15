@@ -4,7 +4,6 @@ import platform
 # 加密
 def shift_cipher_encrypt():
     list_s = []
-    list_s = []
     r_move = int(input('请输入加密移位参数(右移)：  '))
     s = input('请输入需要加密的字符： ')
     print("密文:", end='')
@@ -95,7 +94,7 @@ def shift_cipher_decrypt(s, l_move):
 
 if __name__ == '__main__':
     logo = R'''
-     ____  _     _  __ _         ____ _       _               
+ ____  _     _  __ _         ____ _       _               
 / ___|| |__ (_)/ _| |_      / ___(_)_ __ | |__   ___ _ __ 
 \___ \| '_ \| | |_| __|____| |   | | '_ \| '_ \ / _ \ '__|
  ___) | | | | |  _| ||_____| |___| | |_) | | | |  __/ |   
