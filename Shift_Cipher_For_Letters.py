@@ -50,7 +50,6 @@ def shift_cipher_encrypt(s, r_move):
             i += r_move
             while i > 122:
                 i -= 26
-            i -= 32
         c += chr(i)
     return c
 
@@ -110,7 +109,7 @@ def shift_cipher_decrypt(s, l_move):
 def shift_brute(s):
     result = []
     for i in range(1, 25):
-        result.append(shift_cipher_decrypt(s, i))
+        result.append("解密移位参数(左移)为" + str(i) + "时的结果为: " + shift_cipher_decrypt(s, i))
     return "\n".join(result)
 
 
